@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Version>1.0.0</Version>
+		<Authors>Raypro</Authors>
+		<PackageProjectUrl>https://gitlab.com/rayprosoft/tgs-gameinterface-cq9gaming</PackageProjectUrl>
+		<RepositoryUrl>https://gitlab.com/rayprosoft/tgs-gameinterface-cq9gaming.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<RootNamespace>Tgs.GameInterface.CQ9Gaming.Client</RootNamespace>
+		<PackageId>Tgs.GameInterface.CQ9Gaming.Client</PackageId>
+		<Title>Tgs.GameInterface.CQ9Gaming.Client</Title>
+		<Description>Tgs.GameInterface.CQ9Gaming.Client</Description>
+		<PackageTags>Tgs GameInterface CQ9Gaming Client</PackageTags>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="Grpc.AspNetCore.Server.Reflection" Version="2.63.0" />
+		<PackageReference Include="Grpc.Net.ClientFactory" Version="2.63.0" />
+		<PackageReference Include="Grpc.Tools" Version="2.64.0">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="PhoenixToolkits.Protobuf.ExtendTypes" Version="0.0.7" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Protobuf Include="..\Tgs.GameInterface.CQ9Gaming\Protos\GameInterfaceCQ9Gaming.proto">
+	    <Link>GameInterfaceCQ9Gaming.proto</Link>
+	  </Protobuf>
+	</ItemGroup>
+
+</Project>
