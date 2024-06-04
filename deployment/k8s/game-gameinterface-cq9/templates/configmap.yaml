@@ -11,7 +11,7 @@ data:
         "LogLevel": {
           "Default": "Warning",
           "Microsoft.AspNetCore": "Warning",
-          "Tgs.GameInterface.TPhere.Core": "Information"
+          "Tgs.GameInterface.CQ9Gaming.Core.GameApiClient": "Information"
         }
       },
       "Kestrel": {
