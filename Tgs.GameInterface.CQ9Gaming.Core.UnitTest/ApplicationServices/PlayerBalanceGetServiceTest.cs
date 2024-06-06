@@ -1,6 +1,7 @@
 ﻿using NSubstitute;
-using Tgs.GameInterface.CQ9Gaming.Core.Models;
 using Tgs.GameInterface.CQ9Gaming.Core.ApplicationServices;
+
+using Tgs.GameInterface.CQ9Gaming.Core.Models;
 
 namespace Tgs.GameInterface.CQ9Gaming.Core.UnitTest.ApplicationServices;
 

@@ -1,10 +1,8 @@
-﻿using Tgs.GameInterface.CQ9Gaming.Core;
-using Tgs.ServiceUtility;
-using Tgs.GameInterface.CQ9Gaming.Core.ApplicationServices;
+﻿using Tgs.ServiceUtility;
 
 namespace Tgs.GameInterface.CQ9Gaming.Core.ApplicationServices;
 
-public sealed class PlayerIsGamingGetService(IGameApiClient apiClient) : IGetService<PlayerOnlineQuery, bool>
+internal sealed class PlayerIsGamingGetService(IGameApiClient apiClient) : IGetService<PlayerOnlineQuery, bool>
 {
 	public async ValueTask<bool> GetAsync(PlayerOnlineQuery query, CancellationToken cancellationToken)
 	{

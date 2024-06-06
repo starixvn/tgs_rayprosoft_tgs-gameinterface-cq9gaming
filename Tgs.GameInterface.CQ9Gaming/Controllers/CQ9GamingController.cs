@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Tgs.ServiceUtility;
 using Tgs.GameInterface.CQ9Gaming.Core.ApplicationServices;
+
+using Tgs.ServiceUtility;
 
 namespace Tgs.GameInterface.CQ9Gaming.Controllers;
 

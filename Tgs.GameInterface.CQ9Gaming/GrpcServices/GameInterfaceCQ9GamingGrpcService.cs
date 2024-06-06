@@ -1,8 +1,9 @@
 ﻿using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
+using Tgs.GameInterface.CQ9Gaming.Core.ApplicationServices;
+
 using Tgs.GameInterface.CQ9Gaming.Protos;
 using Tgs.ServiceUtility;
-using Tgs.GameInterface.CQ9Gaming.Core.ApplicationServices;
 
 namespace Tgs.GameInterface.CQ9Gaming.GrpcServices;
 
@@ -113,8 +114,8 @@ public class GameInterfaceCQ9GamingGrpcService(
 		var query = new GameRecordBetLogQuery(
 			ApiUrl: new Uri(request.ApiUrl),
 			ApiToken: request.ApiToken,
-			request.StartTime.ToDateTime(),
-			request.EndTime.ToDateTime(),
+			request.StartTime.ToDateTimeOffset(),
+			request.EndTime.ToDateTimeOffset(),
 			request.Page,
 			request.PageSize);
 

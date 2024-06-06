@@ -9,7 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tgs.GameInterface.CQ9Gaming
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tgs.GameInterface.CQ9Gaming.Core.UnitTest", "Tgs.GameInterface.CQ9Gaming.Core.UnitTest\Tgs.GameInterface.CQ9Gaming.Core.UnitTest.csproj", "{E9B54ED7-761E-45EB-8578-07CCDE275424}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tgs.GameInterface.CQ9Gaming.Client", "Tgs.GameInterface.CQ9Gaming.Client\Tgs.GameInterface.CQ9Gaming.Client.csproj", "{24A4E88D-4ED2-471C-943C-17B4B4E6621C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tgs.GameInterface.CQ9Gaming.Client", "Tgs.GameInterface.CQ9Gaming.Client\Tgs.GameInterface.CQ9Gaming.Client.csproj", "{24A4E88D-4ED2-471C-943C-17B4B4E6621C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tgs.GameInterface.CQ9Gaming.Protos", "Tgs.GameInterface.CQ9Gaming.Protos\Tgs.GameInterface.CQ9Gaming.Protos.csproj", "{78CDD9BB-9A17-4FF9-9906-D81957409C99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tgs.GameInterface.CQ9Gaming.IntegrationTest", "Tgs.GameInterface.CQ9Gaming.IntegrationTest\Tgs.GameInterface.CQ9Gaming.IntegrationTest.csproj", "{E1CFD6A5-A225-475B-8569-E4A1F8551709}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{24A4E88D-4ED2-471C-943C-17B4B4E6621C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24A4E88D-4ED2-471C-943C-17B4B4E6621C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24A4E88D-4ED2-471C-943C-17B4B4E6621C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78CDD9BB-9A17-4FF9-9906-D81957409C99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78CDD9BB-9A17-4FF9-9906-D81957409C99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78CDD9BB-9A17-4FF9-9906-D81957409C99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78CDD9BB-9A17-4FF9-9906-D81957409C99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1CFD6A5-A225-475B-8569-E4A1F8551709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1CFD6A5-A225-475B-8569-E4A1F8551709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1CFD6A5-A225-475B-8569-E4A1F8551709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1CFD6A5-A225-475B-8569-E4A1F8551709}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

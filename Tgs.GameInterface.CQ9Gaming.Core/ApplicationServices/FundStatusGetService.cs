@@ -1,10 +1,8 @@
-﻿using Tgs.GameInterface.CQ9Gaming.Core;
-using Tgs.ServiceUtility;
-using Tgs.GameInterface.CQ9Gaming.Core.ApplicationServices;
+﻿using Tgs.ServiceUtility;
 
 namespace Tgs.GameInterface.CQ9Gaming.Core.ApplicationServices;
 
-public sealed class FundStatusGetService(IGameApiClient apiClient) : IGetService<FundStatusQuery, bool>
+internal sealed class FundStatusGetService(IGameApiClient apiClient) : IGetService<FundStatusQuery, bool>
 {
 	public ValueTask<bool> GetAsync(FundStatusQuery query, CancellationToken cancellationToken = default)
 		=> apiClient.TransactionRecordAsync(

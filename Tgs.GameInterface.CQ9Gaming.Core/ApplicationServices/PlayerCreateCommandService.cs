@@ -1,10 +1,8 @@
-﻿using Tgs.GameInterface.CQ9Gaming.Core;
-using Tgs.ServiceUtility;
-using Tgs.GameInterface.CQ9Gaming.Core.ApplicationServices;
+﻿using Tgs.ServiceUtility;
 
 namespace Tgs.GameInterface.CQ9Gaming.Core.ApplicationServices;
 
-public sealed class PlayerCreateCommandService(IGameApiClient apiClient) : ICommandService<PlayerCreateCommand>
+internal sealed class PlayerCreateCommandService(IGameApiClient apiClient) : ICommandService<PlayerCreateCommand>
 {
 	public ValueTask ExecuteAsync(PlayerCreateCommand command, CancellationToken cancellationToken = default)
 		=> apiClient.PlayerCreatedAsync(

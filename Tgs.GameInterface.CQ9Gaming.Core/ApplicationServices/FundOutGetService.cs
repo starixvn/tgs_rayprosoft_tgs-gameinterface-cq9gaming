@@ -1,10 +1,8 @@
-﻿using Tgs.GameInterface.CQ9Gaming.Core;
-using Tgs.ServiceUtility;
-using Tgs.GameInterface.CQ9Gaming.Core.ApplicationServices;
+﻿using Tgs.ServiceUtility;
 
 namespace Tgs.GameInterface.CQ9Gaming.Core.ApplicationServices;
 
-public sealed class FundOutGetService(IGameApiClient apiClient) : IGetService<FundOutQuery, FundOutResult>
+internal sealed class FundOutGetService(IGameApiClient apiClient) : IGetService<FundOutQuery, FundOutResult>
 {
 	public async ValueTask<FundOutResult> GetAsync(FundOutQuery query, CancellationToken cancellationToken = default)
 	{

@@ -1,11 +1,9 @@
 ﻿using System.Runtime.CompilerServices;
-using Tgs.GameInterface.CQ9Gaming.Core;
 using Tgs.ServiceUtility;
-using Tgs.GameInterface.CQ9Gaming.Core.ApplicationServices;
 
 namespace Tgs.GameInterface.CQ9Gaming.Core.ApplicationServices;
 
-public sealed class GameRecordBetLogQueryService(IGameApiClient apiClient) : IQueryService<GameRecordBetLogQuery, GameRecordResult>
+internal sealed class GameRecordBetLogQueryService(IGameApiClient apiClient) : IQueryService<GameRecordBetLogQuery, GameRecordResult>
 {
 	public async IAsyncEnumerable<GameRecordResult> QueryAsync(
 		GameRecordBetLogQuery query,
