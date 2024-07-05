@@ -2,7 +2,7 @@
 
 namespace Tgs.GameInterface.CQ9Gaming.Core.ApplicationServices;
 
-internal sealed class PlayerIsGamingGetService(IGameApiClient apiClient) : IGetService<PlayerOnlineQuery, bool>
+internal sealed class PlayerOnlineGetSerivce(IGameApiClient apiClient) : IGetService<PlayerOnlineQuery, bool>
 {
 	public async ValueTask<bool> GetAsync(PlayerOnlineQuery query, CancellationToken cancellationToken)
 	{
@@ -12,7 +12,11 @@ internal sealed class PlayerIsGamingGetService(IGameApiClient apiClient) : IGetS
 			query.PlayerCode,
 			cancellationToken)
 			.ConfigureAwait(false);
-		return status.Equals("login", StringComparison.InvariantCultureIgnoreCase) ||
-			   status.Equals("gaming", StringComparison.InvariantCultureIgnoreCase);
+
+		/*
+		 * usertoken只要沒有進行維護或是登出行為將會永久性有效
+		 * 因為玩家沒有進行登出，所以還是會在登入狀態
+		 */
+		return status.Equals("gaming", StringComparison.InvariantCultureIgnoreCase);
 	}
 }
